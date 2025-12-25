@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prezee - Aesthetic Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0a0d12;
+      color: #ffffff;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 50px;
+      background: #0f1218;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    header h1 {
+      color: #56a6ff;
+      letter-spacing: 2px;
+      font-size: 28px;
+    }
+    nav a {
+      margin-left: 25px;
+      color: #d6e6ff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #56a6ff;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 60px 80px;
+    }
+    .hero-text {
+      max-width: 500px;
+    }
+    .hero-text h2 {
+      font-size: 48px;
+      line-height: 1.2;
+      color: #cfe4ff;
+    }
+    .hero-text p {
+      margin: 15px 0 30px;
+      color: #9ab8d8;
+    }
+    .btn {
+      background: #56a6ff;
+      color: #0a0d12;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #1c72d6;
+    }
+    .hero img {
+      width: 380px;
+      border-radius: 20px;
+      box-shadow: 0px 0px 25px rgba(0, 140, 255, 0.4);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 32px;
+      color: #56a6ff;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+      padding: 40px 80px;
+    }
+    .product {
+      background: #10141c;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .product:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 0px 20px rgba(0, 140, 255, 0.3);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    .product h3 {
+      margin: 12px 0;
+      color: #d6e6ff;
+    }
+    .product p {
+      color: #7fa3c7;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Prezee</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Everything you love, just a click away</h2>
+      <p>Discover stylish, premium, and aesthetic products curated just for you.</p>
+      <button class="btn">Shop Now</button>
+    </div>
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=600" alt="Shopping bag" />
+  </section>
+
+  <h2 class="section-title">New Arrivals</h2>
+
+  <section class="products" id="shop">
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600" />
+      <h3>Luxury Headphones</h3>
+      <p>$89.99</p>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=600" />
+      <h3>Modern Smartwatch</h3>
+      <p>$129.99</p>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600" />
+      <h3>Premium Sneakers</h3>
+      <p>$99.99</p>
+    </div>
+
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?w=600" />
+      <h3>Travel Backpack</h3>
+      <p>$59.99</p>
+    </div>
+  </section>
+</body>
+</html>
